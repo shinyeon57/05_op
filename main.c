@@ -4,16 +4,22 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	//practice02 
+	//practice03 
 	int input;
 	
 	printf("input a number : ");
 	scanf("%d", &input);
 	
 	if(input>0)
-		printf("|X|=%d\n",input);
-	else
-		printf("|X|=%d\n",-input);
+	
+		printf("positive\n");
+
+
+	else if(input<0)
+		printf("negative\n");
+		
+	else 
+		printf("zero\n");
 		
 	return 0;
 }
